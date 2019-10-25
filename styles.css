@@ -7,5 +7,17 @@ body {
 }
 
 .enroll {
-	background-image: url("enroll.png");
+	background-image: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.wrapper img {
+	background-image: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 475px;
 }
