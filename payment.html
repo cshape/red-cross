@@ -54,7 +54,7 @@
                 </select>
             </div>
             <div class="form-group" id="pay-now">
-                <button type="submit" class="btn btn-default" id="confirm-purchase">Confirm</button>
+                <button type="button" onclick="success()" class="btn btn-default" id="confirm-purchase">Confirm</button>
             </div>
         </form>
     </div>
@@ -62,6 +62,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
+
+        function success () {
+            $("html").html('<h1>Success!</h1>');
+        }
         function getQueryVariable(variable)
             {
                    var query = window.location.search.substring(1);
