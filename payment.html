@@ -7,9 +7,10 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="payment.css">
 </head>
 
-<body>
+<body id="paymentbody">
 
    <div class="creditCardForm">
     <div class="heading">
@@ -78,7 +79,7 @@
             }
 
             let amount2replace = getQueryVariable("amount");
-            document.getElementById("toreplace").innerHTML = `Please submit payment for $${amount2replace}`;
+            document.getElementById("toreplace").innerHTML = `$${amount2replace}`;
     </script>
 </body>
 </html>
